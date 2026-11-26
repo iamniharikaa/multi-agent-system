@@ -2,10 +2,15 @@ import os
 import time
 
 import streamlit as st
+from streamlit.errors import StreamlitSecretNotFoundError
 
 # On Streamlit Cloud, keys come from the app's Secrets settings instead of a .env file.
-for _key, _value in st.secrets.items():
-    os.environ.setdefault(_key, str(_value))
+# Locally there's no secrets file, so this step is skipped and .env is used instead.
+try:
+    for _key, _value in st.secrets.items():
+        os.environ.setdefault(_key, str(_value))
+except StreamlitSecretNotFoundError:
+    pass
 
 from agents import build_reader_agent, build_search_agent, writer_chain, critic_chain
 
