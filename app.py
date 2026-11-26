@@ -1,5 +1,12 @@
-import streamlit as st
+import os
 import time
+
+import streamlit as st
+
+# On Streamlit Cloud, keys come from the app's Secrets settings instead of a .env file.
+for _key, _value in st.secrets.items():
+    os.environ.setdefault(_key, str(_value))
+
 from agents import build_reader_agent, build_search_agent, writer_chain, critic_chain
 
 # ── Page config ──────────────────────────────────────────────────────────────
@@ -405,6 +412,7 @@ if run_btn:
         st.rerun()
 
 if st.session_state.running and not st.session_state.done:
+    st.session_state.running = False  # cleared up front so an error can't restart the run
     results = {}
     topic_val = st.session_state.topic_input
 
