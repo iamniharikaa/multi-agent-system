@@ -19,6 +19,11 @@ Built with [LangChain](https://www.langchain.com/) and [Streamlit](https://strea
 - Read the critic's feedback on the report
 - Download the final report as a Markdown file
 
+## Project architecture 
+
+<img width="3725" height="8192" alt="Project architecture" src="https://github.com/user-attachments/assets/77c018a0-820a-40bb-8fae-45bb3090feeb" />
+
+
 ## Project structure
 
 ```
