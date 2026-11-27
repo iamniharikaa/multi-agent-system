@@ -482,6 +482,36 @@ details summary {
     color: #ffb070 !important;
 }
 .result-content { color: #f5f1e8; }
+/* ── Sticky title: pinned at the top while the page scrolls under it ── */
+.st-key-sticky_title {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(10,10,15,0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,140,50,0.2);
+    margin: 0 -3rem;
+    padding: 0.6rem 3rem;
+}
+.st-key-sticky_title h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #f0ebe0;
+    margin: 0;
+    text-align: center;
+}
+.st-key-sticky_title h1 span { color: #ff8c32; }
+.st-key-sticky_title h1 .title-word { display: inline; }
+
+@media (max-width: 640px) {
+    .st-key-sticky_title { margin: 0 -1rem; padding: 0.5rem 1rem; }
+    .st-key-sticky_title h1 { font-size: 1.9rem; }
+    .st-key-sticky_title h1 .title-word { display: block; }
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -517,7 +547,17 @@ for key in ("results", "running", "done"):
 st.markdown("""
 <div class="hero">
 <div class="hero-eyebrow">Multi-Agent AI System</div>
+</div>
+""", unsafe_allow_html=True)
+
+# The title sits in its own container so it can stay pinned while the page scrolls
+with st.container(key="sticky_title"):
+    st.markdown("""
 <h1><span class="title-word">Research</span><span class="title-word">Mind</span></h1>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="hero">
 <p class="hero-sub">Four specialized AI agents collaborate — searching, scraping, writing, and critiquing — to deliver a polished research report on any topic.</p>
 </div>
 <div class="divider"></div>
