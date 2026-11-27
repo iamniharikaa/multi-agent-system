@@ -1,0 +1,69 @@
+﻿
+ Enter a research topic : 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+step 1 - search agent is working ...
+==================================================
+python : Traceback (most recent call last):
+At line:17 char:10
++     $t | python -u pipeline.py 2>&1 | Out-File -FilePath "trace_$i.tx ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\multi agent system\pipeline.py", line 74, in <module>
+    run_research_pipeline(topic)
+  File "D:\multi agent system\pipeline.py", line 13, in run_research_pipeline
+    search_result = search_agent.invoke({
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\main.py", line 4025, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\main.py", line 3084, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\_runner.py", line 210, in tick
+    run_with_retry(
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\_retry.py", line 637, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 794, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 479, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain\agents\factory.py", line 1539, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain\agents\factory.py", line 1509, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\runnables\base.py", line 6007, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 540, in invoke
+    self.generate_prompt(
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1941, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1748, in generate
+    self._generate_with_cache(
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2090, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_groq\chat_models.py", line 697, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\resources\chat\completions.py", line 466, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization 
+`org_01m8bfc30zezdvztb5c4bep2zb` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194654, Requested 6311. Please try 
+again in 6m56.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 
+'rate_limit_exceeded'}}
+During task with name 'model' and id '0c98c149-945f-48c4-c16f-9e36b1e8ae46'

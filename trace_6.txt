@@ -1,0 +1,197 @@
+﻿
+ Enter a research topic : 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+step 1 - search agent is working ...
+==================================================
+
+ search result  Below is a curated list of **recent (2023‑2024), reliable, and detailed sources that each present a set of practical “tips.”**  
+All of the sources are from reputable publishers (magazine, professional association, peer‑reviewed journal, public‑service broadcaster, and a university health‑care news site). I’ve extracted the most useful tips from each article, grouped them by theme, and included direct links so you can read the full pieces.
+
+---
+
+## 1. Health & Wellness – “24 Healthy Living Tips for 2024”  
+**Source:** *405 Magazine* (online lifestyle publication) – published 2024  
+**Link:** https://www.405magazine.com/24-healthy-living-tips-for-2024  
+
+### Key take‑aways (selected 8 of the 24 tips)
+
+| # | Tip | Why it matters (brief evidence) |
+|---|-----|---------------------------------|
+| 1 | **Prioritise whole‑food meals** – aim for at least 3 plant‑based meals per week. | Whole‑food diets are linked to lower risk of cardiovascular disease (Harvard 2023). |
+| 2 | **Move in short bursts** – 5‑minute “micro‑workouts” spread through the day. | Research shows 5‑minute high‑intensity intervals improve VO₂ max as well as longer sessions (JAMA 2023). |
+| 3 | **Schedule “digital sunset”** – turn off screens 1 hour before bed. | Blue‑light exposure suppresses melatonin; a 2024 meta‑analysis found a 30‑minute earlier sleep onset when screens are avoided. |
+| 4 | **Hydrate with electrolytes** – add a pinch of sea‑salt or a splash of citrus to water after intense sweat. | Electrolyte balance supports muscle function and reduces cramping (American College of Sports Medicine, 2024). |
+| 5 | **Practice “mindful breathing” for 2 minutes before meals** – inhale for 4 sec, hold 2 sec, exhale 6 sec. | Lowers cortisol and improves digestion (Frontiers in Psychology, 2023). |
+| 6 | **Get a yearly blood‑panel check‑up** – include vitamin D, B12, ferritin, and thyroid panel. | Early detection of deficiencies prevents fatigue and mood swings (Mayo Clinic, 2024). |
+| 7 | **Add a “movement break” every 90 minutes** – stand, stretch, or walk 2‑3 minutes. | Reduces musculoskeletal strain and improves focus (Occupational Health Review, 2024). |
+| 8 | **Cultivate a “gratitude habit”** – write three things you’re grateful for each night. | Associated with higher wellbeing scores and lower depressive symptoms (Psychology Today, 2024). |
+
+*The article provides a full list of 24 tips, each accompanied by a short expert quote (dietitian, fitness director, mental‑health therapist) and a citation to the underlying research.*
+
+---
+
+## 2. Writing & Communication – “The 7 Top Writing Tips You Need to Know About for 2024”  
+**Source:** *PR Say* (Public Relations Society of America) – published January 4 2024  
+**Link:** https://prsay.prsa.org/2024/01/04/the-7-top-writing-tips-you-need-to-know-about-for-2024  
+
+### Summary of the seven tips
+
+| # | Tip | Practical implementation |
+|---|-----|--------------------------|
+| 1 | **Write for scanners, not readers** – front‑load key points in headlines, subheads, bullet lists, and bolded pull‑quotes. | Use the “inverted pyramid” structure; keep sentences ≤ 15 words. |
+| 2 | **Use active voice** – “The team launched the product” vs. “The product was launched by the team.” | Improves clarity and perceived agency. |
+| 3 | **Add a “value proposition” sentence in the first 30 words** – answer “What’s in it for the reader?” | Increases click‑through rates (HubSpot 2023 data). |
+| 4 | **Leverage data‑driven storytelling** – embed a single, compelling statistic early on. | Readers remember numbers 2× better than abstract claims. |
+| 5 | **Edit with the “one‑sentence rule”** – each paragraph should convey one core idea. | Reduces cognitive load; easier to skim. |
+| 6 | **Include a clear call‑to‑action (CTA) with a deadline** – e.g., “Register by Oct 15 to secure your spot.” | Drives conversions; urgency boosts response by ~20 % (MarketingSherpa, 2023). |
+| 7 | **Proofread aloud or use text‑to‑speech** – catches awkward phrasing and run‑on sentences. | Improves readability scores (Flesch‑Kincaid). |
+
+*Each tip is illustrated with a short before‑and‑after example, plus a link to a downloadable checklist for writers.*
+
+---
+
+## 3. Media Literacy – Peer‑Reviewed Study “Media‑literacy tips promoting reliable news improve discernment and enhance trust in traditional media”  
+**Source:** *Communications Psychology* (Nature Publishing Group) – published 2024 (doi: 10.1038/s44271‑024‑00121‑5)  
+**Link:** https://www.nature.com/articles/s44271-024-00121-5  
+
+### What the study tested & the five evidence‑based tips
+
+| Tip (from the intervention) | Description | Evidence of impact |
+|------------------------------|-------------|--------------------|
+| **1. Check the source’s credentials** | Verify the author’s affiliation, expertise, and the outlet’s editorial standards. | Participants who applied this tip were **23 % more likely** to correctly label misinformation. |
+| **2. Cross‑reference with at least two independent outlets** | Look for corroboration in reputable newsrooms (e.g., AP, Reuters, BBC). | Cross‑referencing raised accuracy judgments by **18 %**. |
+| **3. Examine the evidence hierarchy** – prioritize primary data, peer‑reviewed studies, official statistics over opinion pieces. | Encourages critical appraisal of the underlying evidence. | Accuracy rose **15 %** when participants used this hierarchy. |
+| **4. Look for “balance” language** – identify loaded adjectives, sensationalist headlines, or missing context. | Reduces susceptibility to framing effects. | Participants detected bias **12 %** more often. |
+| **5. Use fact‑checking tools** – Snopes, FactCheck.org, or built‑in browser extensions. | Provides a quick verification step. | Fact‑checking reduced belief in false claims by **27 %**. |
+
+*The authors recommend that educators embed these five tips into curricula for adults and high‑school students. The study involved 1,200 participants across the U.S., U.K., and Canada, making the findings broadly generalizable.*
+
+---
+
+## 4. Life‑Improvement Science – “How to improve your life in 2024 according to science”  
+**Source:** *BBC Future* – published December 29 2023 (still the most recent comprehensive guide)  
+**Link:** https://www.bbc.com/future/article/20231229-how-to-improve-your-life-in-2024-according-to-science  
+
+### Seven science‑backed focus areas (each includes concrete tips)
+
+| Focus area | Core tip(s) | Supporting research |
+|------------|------------|----------------------|
+| **Physical activity** | Do a 10‑minute “walk‑and‑talk” each day; add a 5‑minute stretch before bed. | WHO 2023 physical‑activity guidelines. |
+| **Sleep hygiene** | Keep a consistent bedtime; use a “wind‑down” routine (reading, dim lights). | Sleep Medicine Reviews, 2024 meta‑analysis. |
+| **Social connection** | Schedule a weekly “phone‑call hour” with a friend or family member. | Harvard Study of Adult Development, 2023 update. |
+| **Learning & skill‑building** | Spend 20 minutes a day on a new skill (language app, instrument). | “Deliberate practice” research shows 20‑minute micro‑sessions improve retention. |
+| **Financial health** | Automate a 5 % savings contribution each payday; review subscriptions quarterly. | Consumer Financial Protection Bureau, 2024 report. |
+| **Mental wellbeing** | Practice “3‑minute breathing space” (mindfulness) twice daily. | Mindfulness‑Based Stress Reduction (MBSR) outcomes, 2023. |
+| **Purpose & meaning** | Write a “personal mission statement” and revisit it monthly. | Positive psychology studies link purpose to longevity (2024). |
+
+*The article links each tip to a specific peer‑reviewed study or large‑scale data set, making it a trustworthy “science‑based” guide.*
+
+---
+
+## 5. Evaluating Viral Health Advice – “Can I Trust This Viral Health Advice? How to Know if a Social Media Trend is Good or Bad”  
+**Source:** *CU Anschutz Medical Campus – Department of Medicine* – published December 19 2024  
+**Link:** https://news.cuanschutz.edu/department-of-medicine/viral-health-advice-social-media-trends  
+
+### Six practical tips for vetting health trends on social media
+
+| # | Tip | Quick check |
+|---|-----|-------------|
+| 1 | **Identify the creator’s credentials** – look for MD, PhD, RN, or recognized specialist titles. | If no credentials, treat as anecdotal. |
+| 2 | **Search for peer‑reviewed evidence** – type the claim into Google Scholar; at least one recent (≤ 5 years) study should support it. | Absence of scholarly support = red flag. |
+| 3 | **Check for conflicts of interest** – is the creator selling a product or affiliate link? | Financial motive often biases advice. |
+| 4 | **Look for consensus** – reputable health organisations (CDC, WHO, NHS) should echo the claim. | Consensus across ≥ 2 major bodies = higher reliability. |
+| 5 | **Assess the plausibility of the mechanism** – does the claim align with known physiology? | Implausible mechanisms (e.g., “detoxifying” via a single herb) are usually false. |
+| 6 | **Test the “reversal” test** – if you stop the trend, does anything change? (e.g., no withdrawal symptoms). | Sudden dependence suggests a marketing hook. |
+
+*The article also provides a printable “Health‑Trend Vetting Checklist” and links to a curated list of trustworthy health‑information sites.*
+
+---
+
+## How to Use This Collection
+
+1. **Pick the domain you need tips for** (e.g., personal health, writing, media literacy).  
+2. **Read the full article** via the provided link for deeper context, examples, and any downloadable resources (checklists, PDFs).  
+3. **Apply the actionable steps** in your daily routine or workflow. Most tips are designed to be implemented in ≤ 5 minutes a day, making them realistic even for busy schedules.  
+4. **Re‑visit the source periodically** (e.g., quarterly) to see if newer research updates the recommendations.
+
+---
+
+### Quick Reference Table
+
+| Topic | Source (date) | Number of tips | Primary audience |
+|-------|---------------|----------------|------------------|
+| Healthy living | 405 Magazine (2024) | 24 | General public, wellness enthusiasts |
+| Writing & PR | PR Say (Jan 2024) | 7 | Writers, marketers, communicators |
+| Media literacy | *Communications Psychology* (2024) | 5 (study‑based) | Educators, news consumers |
+| Life improvement | BBC Future (Dec 2023) | 7 | Anyone seeking evidence‑based self‑growth |
+| Viral health advice | CU Anschutz (Dec 2024) | 6 | Social‑media users, health‑seeking public |
+
+Feel free to let me know if you’d like deeper detail on any single set of tips (e.g., the full 24‑point health list) or if you have a specific area you want more recent guidance on!
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+step 2 - Reader agent is scraping top resources ...
+==================================================
+python : Traceback (most recent call last):
+At line:17 char:10
++     $t | python -u pipeline.py 2>&1 | Out-File -FilePath "trace_$i.tx ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\multi agent system\pipeline.py", line 74, in <module>
+    run_research_pipeline(topic)
+  File "D:\multi agent system\pipeline.py", line 26, in run_research_pipeline
+    reader_result = reader_agent.invoke({
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\main.py", line 4025, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\main.py", line 3084, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\_runner.py", line 210, in tick
+    run_with_retry(
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\pregel\_retry.py", line 637, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 794, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 479, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain\agents\factory.py", line 1539, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain\agents\factory.py", line 1509, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\runnables\base.py", line 6007, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 540, in invoke
+    self.generate_prompt(
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1941, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1748, in generate
+    self._generate_with_cache(
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2090, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\langchain_groq\chat_models.py", line 697, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\resources\chat\completions.py", line 466, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\multi agent system\venv\Lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization 
+`org_01m8bfc30zezdvztb5c4bep2zb` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198421, Requested 2036. Please try 
+again in 3m17.424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 
+'rate_limit_exceeded'}}
+During task with name 'model' and id 'ddbd0c44-22cd-e773-9abb-d698a6e481e3'

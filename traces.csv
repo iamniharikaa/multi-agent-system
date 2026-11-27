@@ -1,0 +1,7 @@
+topic,search_relevant,scrape_succeeded,report_complete,critic_score,notes
+Recent advances in solid-state batteries,yes,no,no,7,reader asked for URL; report cut off before conclusion and sources
+CRISPR gene editing,yes,no,yes,8,reader asked for URL
+Fusion energy progress,no,no,no,,step 1 failed: 413 request too large (8000 TPM limit)
+LLM agents 2025,yes,no,yes,7,reader asked for URL; sources list cut off at item 8
+Zorblax quantum fabric standards,no,no,no,,step 1 failed: daily token limit (429)
+tips,yes,no,no,,vague topic; step 2 failed: daily token limit (429)

@@ -1,5 +1,6 @@
 import os
 import time
+import traceback
 
 import streamlit as st
 from streamlit.errors import StreamlitSecretNotFoundError
@@ -13,6 +14,14 @@ except StreamlitSecretNotFoundError:
     pass
 
 from agents import build_reader_agent, build_search_agent, writer_chain, critic_chain
+def friendly_error_message(exc: Exception) -> str:
+    """Turn a technical error into a message users can understand."""
+    text = str(exc)
+    if "tokens per day" in text or "(TPD)" in text:
+        return ("This site has reached its daily limit and is out of tokens for today. "
+                "Please try again tomorrow.")
+    return ("Something went wrong while running the research. "
+            "Please try again in a few minutes.")
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -99,17 +108,24 @@ html, body, [class*="css"] {
 }
 
 /* ── Streamlit input overrides ── */
-.stTextInput > div > div > input {
-    background: rgba(255,255,255,0.05) !important;
+.stTextInput input {
+    background: #ffffff !important;
     border: 1px solid rgba(255,140,50,0.25) !important;
     border-radius: 10px !important;
-    color: #f0ebe0 !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    caret-color: #000000 !important;
     font-family: 'DM Sans', sans-serif !important;
     font-size: 1rem !important;
     padding: 0.75rem 1rem !important;
     transition: border-color 0.2s, box-shadow 0.2s !important;
 }
-.stTextInput > div > div > input:focus {
+.stTextInput input::placeholder {
+    color: #777777 !important;
+    -webkit-text-fill-color: #777777 !important;
+    opacity: 1 !important;
+}
+.stTextInput input:focus {
     border-color: #ff8c32 !important;
     box-shadow: 0 0 0 3px rgba(255,140,50,0.12) !important;
 }
@@ -347,7 +363,6 @@ st.markdown("""
 col_input, col_spacer, col_pipeline = st.columns([5, 0.5, 4])
 
 with col_input:
-    st.markdown('<div class="input-card">', unsafe_allow_html=True)
     topic = st.text_input(
         "Research Topic",
         placeholder="e.g. Quantum computing breakthroughs in 2025",
@@ -412,65 +427,76 @@ if run_btn:
         st.warning("Please enter a research topic first.")
     else:
         st.session_state.results = {}
+        st.session_state.error = None
         st.session_state.running = True
         st.session_state.done = False
         st.rerun()
 
 if st.session_state.running and not st.session_state.done:
-    st.session_state.running = False  # cleared up front so an error can't restart the run
+    st.session_state.running = False
     results = {}
     topic_val = st.session_state.topic_input
 
-    # ── Step 1: Search ──
-    with st.spinner("🔍  Search Agent is working…"):
-        search_agent = build_search_agent()
-        sr = search_agent.invoke({
-            "messages": [("user", f"Find recent, reliable and detailed information about: {topic_val}")]
-        })
-        results["search"] = sr["messages"][-1].content
-        st.session_state.results = dict(results)
-    st.rerun() if False else None   # keep inline for now
+    try:
+        # ── Step 1: Search ──
+        with st.spinner("🔍  Search Agent is working…"):
+            search_agent = build_search_agent()
+            sr = search_agent.invoke({
+                "messages": [("user", f"Find recent, reliable and detailed information about: {topic_val}")]
+            })
+            results["search"] = sr["messages"][-1].content
+            st.session_state.results = dict(results)
 
-    # ── Step 2: Reader ──
-    with st.spinner("📄  Reader Agent is scraping top resources…"):
-        reader_agent = build_reader_agent()
-        rr = reader_agent.invoke({
-            "messages": [("user",
-                f"Based on the following search results about '{topic_val}', "
-                f"pick the most relevant URL and scrape it for deeper content.\n\n"
-                f"Search Results:\n{results['search'][:800]}"
-            )]
-        })
-        results["reader"] = rr["messages"][-1].content
-        st.session_state.results = dict(results)
+        # ── Step 2: Reader ──
+        with st.spinner("📄  Reader Agent is scraping top resources…"):
+            reader_agent = build_reader_agent()
+            rr = reader_agent.invoke({
+                "messages": [("user",
+                    f"Based on the following search results about '{topic_val}', "
+                    f"pick the most relevant URL and scrape it for deeper content.\n\n"
+                    f"Search Results:\n{results['search'][:800]}"
+                )]
+            })
+            results["reader"] = rr["messages"][-1].content
+            st.session_state.results = dict(results)
 
-    # ── Step 3: Writer ──
-    with st.spinner("✍️  Writer is drafting the report…"):
-        research_combined = (
-            f"SEARCH RESULTS:\n{results['search']}\n\n"
-            f"DETAILED SCRAPED CONTENT:\n{results['reader']}"
-        )
-        results["writer"] = writer_chain.invoke({
-            "topic": topic_val,
-            "research": research_combined
-        })
-        st.session_state.results = dict(results)
+        # ── Step 3: Writer ──
+        with st.spinner("✍️  Writer is drafting the report…"):
+            research_combined = (
+                f"SEARCH RESULTS:\n{results['search']}\n\n"
+                f"DETAILED SCRAPED CONTENT:\n{results['reader']}"
+            )
+            results["writer"] = writer_chain.invoke({
+                "topic": topic_val,
+                "research": research_combined
+            })
+            st.session_state.results = dict(results)
 
-    # ── Step 4: Critic ──
-    with st.spinner("🧐  Critic is reviewing the report…"):
-        results["critic"] = critic_chain.invoke({
-            "report": results["writer"]
-        })
-        st.session_state.results = dict(results)
+        # ── Step 4: Critic ──
+        with st.spinner("🧐  Critic is reviewing the report…"):
+            results["critic"] = critic_chain.invoke({
+                "report": results["writer"]
+            })
+            st.session_state.results = dict(results)
 
-    st.session_state.running = False
-    st.session_state.done = True
+        st.session_state.done = True
+
+    except Exception as exc:
+        # The full error goes to the server logs (Streamlit Cloud → Manage app).
+        # Users only see the friendly message.
+        traceback.print_exc()
+        st.session_state.results = {}
+        st.session_state.error = friendly_error_message(exc)
+        st.session_state.done = True
+
     st.rerun()
 
 
 # ── Results display ───────────────────────────────────────────────────────────
 r = st.session_state.results
-
+error_msg = st.session_state.get("error")
+if error_msg:
+    st.error(error_msg)
 if r:
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.markdown('<div class="section-heading">Results</div>', unsafe_allow_html=True)
