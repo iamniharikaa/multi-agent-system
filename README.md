@@ -67,7 +67,7 @@ Create a file named `.env` in the project folder and add the keys your agents us
 
 ```
 TAVILY_API_KEY = your-key-here
-OPENAI_API_KEY = your-key-here
+GROQ_API_KEY = your-key-here
 ```
 
 Never commit `.env` to GitHub. It's already listed in `.gitignore`.
@@ -99,7 +99,7 @@ The app runs on Streamlit Community Cloud:
 3. Under **Advanced settings → Secrets**, add your API keys in TOML format:
    ```toml
    TAVILY_API_KEY = "your-key-here"
-   OPENAI_API_KEY = "your-key-here"
+   GROQ_API_KEY = "your-key-here"
    ```
 4. Click **Deploy**.
 
